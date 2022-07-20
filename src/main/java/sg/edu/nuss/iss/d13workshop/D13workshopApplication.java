@@ -44,14 +44,4 @@ public class D13workshopApplication implements ApplicationRunner {
 
 	}
 
-
-	// reading and saving should be done to a model (structure) to store data
-	public boolean save() {
-		return false;
-	}
-
-	public void read(String fileId) {
-
-	}
-
 }
