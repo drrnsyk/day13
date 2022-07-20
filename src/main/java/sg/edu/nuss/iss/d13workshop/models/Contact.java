@@ -5,14 +5,14 @@ import java.util.UUID; // allow user to generate random unique ID
 public class Contact {
 
     // properties
-    private String id;
+    private final String id;
     private String name;
     private String email;
     private String phone;
 
     // constructors
     public Contact() {
-        this.id = UUID.randomUUID().toString().substring(0,0);
+        this.id = UUID.randomUUID().toString().substring(0,8);
     }
 
     public Contact(String id) {
@@ -50,7 +50,7 @@ public class Contact {
 
     @Override
     public String toString() {
-        return "Contact [email=" + email + ",id=" + id + ", name=" + name + ", phone=" + phone + "]";
+        return "Contact [email=" + email + " id=" + id + " name=" + name + " phone=" + phone + "]";
     }
 
 }
