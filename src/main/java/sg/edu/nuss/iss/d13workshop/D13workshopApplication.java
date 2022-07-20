@@ -32,7 +32,7 @@ public class D13workshopApplication implements ApplicationRunner {
 
 			if (!db5vc.isDataDirValid()) {
 				System.err.printf("%s does not exist, is not a directory or not writable.", dataDir);
-				System.exit(-1);
+				//System.exit(-1);
 			}
 
 			System.out.printf("Using %s as data directory\n", dataDir);
